@@ -74,3 +74,23 @@ phones = {
 phones["Justin Time"] = "123-456-789"
 print(phones["John Doe"])
 print(phones)
+
+
+
+password = "admin"
+max_attempts = 3
+
+total_attempts = 0
+for _ in range(max_attempts):
+    input_password = input("Enter your password: ")
+    if input_password == password:
+        print("Password is correct")
+        break
+    else:
+        print("Password is incorrect")
+        total_attempts += 1
+
+if total_attempts == max_attempts:
+    print("You have reached the maximum number of attempts")
+    print("Your account is locked")
+print("End of the program")
